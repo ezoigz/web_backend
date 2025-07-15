@@ -132,6 +132,14 @@ exports.Prisma.UserScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
+exports.Prisma.CategoryScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  status: 'status',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -156,8 +164,14 @@ exports.UserRole = exports.$Enums.UserRole = {
   Admin: 'Admin'
 };
 
+exports.CategoryStatus = exports.$Enums.CategoryStatus = {
+  Active: 'Active',
+  Inactive: 'Inactive'
+};
+
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Category: 'Category'
 };
 
 /**

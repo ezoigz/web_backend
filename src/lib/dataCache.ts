@@ -1,9 +1,9 @@
-type CACHE_TAG = "users"
+type CACHE_TAG = "users" | "categories"
 
-export const getGlobalTag = (teg: CACHE_TAG) => {
-    return `global:${teg}` as const
+export const getGlobalTag = (tag: CACHE_TAG) => {
+    return `global:${tag}` as const
 }
 
-export const getIdTeg = (teg: CACHE_TAG, id: string) => {
-    return `id:${id}-${teg}` as const //id:4444-users
+export const getIdTag = (tag: CACHE_TAG, id: string) => {
+    return `id:${id}-${tag}` as const //id:4444-users
 }
